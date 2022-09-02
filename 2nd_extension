@@ -1,0 +1,7 @@
+SELECT enclosures.name
+FROM enclosures
+INNER JOIN animals
+ON animals.enclosureid = enclosures.id
+ORDER BY animals.age DESC
+LIMIT 1;
+
