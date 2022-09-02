@@ -1,0 +1,7 @@
+SELECT employees.name
+FROM employees
+INNER JOIN assignments
+ON assignments.employeeid = employees.id
+INNER JOIN enclosures
+ON assignments.enclosureid = enclosures.id
+WHERE enclosures.id = 1;
